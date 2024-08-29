@@ -15,7 +15,7 @@
                 Bienvenido a la plataforma <b>Eport</b>
             </h1>
             <p>
-                Aqui podrá encontrar la información de vuelos más reciente en enustro aeropuerto. 
+                Aqui podrá encontrar la información de vuelos más reciente en enustro aeropuerto.
             </p>
         </div>
         <div class="section">
@@ -30,10 +30,27 @@
         </div>
         <div class="bottom">
             <h1>El vuelo más próximo:</h1>
-            <p></p>
-            <p></p>
+            <p>
+                numero de vuelo: <span id="vuelo"></span>
+            </p>
+            <p>
+                Terminal: <span id="terminal"></span>
+            </p>
         </div>
     </div>
+
+    <div id="alerta">
+        <div class="alerta-contenido">
+            <div>
+                <p>Pasajero, se le recuerda que para abordar el avión debe tener <br> en mano su pasaporte y su boleto
+                    de embarque. Manténgase <br>atento a los avisos mediante esta plataforma.</p>
+            </div>
+            <div class="alertaFooter">
+                <button id="cerrarAlerta" class="cerrar">Close</button>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 

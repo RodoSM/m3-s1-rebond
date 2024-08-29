@@ -5,7 +5,6 @@
 
 body {
     height: 100dvh;
-    background: lightcoral;
     background-image: linear-gradient(to right,blue , pink);
 }
 
@@ -13,12 +12,16 @@ b {
     font-style: italic;
 }
 
+/* contenedor principal */
+
 #main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* contenedor "bienbenidos */
 
 .top {
     background-color: whitesmoke;
@@ -33,6 +36,8 @@ b {
     font-size: 20px;
 }
 
+/* contenedor seccion media */
+
 .section {
     display: flex;
 }
@@ -46,4 +51,59 @@ b {
     justify-content: center;
     align-items: center;
     margin: 20px;
+}
+
+/*  contenedor seccion baja */
+
+.bottom {
+    background-color: whitesmoke;
+}
+
+.bottom p {
+    text-align: center;
+    margin: 10px;
+}
+
+/* css alerta */
+
+#alerta {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.alerta-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.alerta-contenido p {
+    margin-bottom: 10px;
+}
+
+.cerrar {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: blue;
+    padding-top: 10px;
+}
+
+.alertaFooter {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
 }
