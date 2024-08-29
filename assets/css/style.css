@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100dvh;
+    background: lightcoral;
+    background-image: linear-gradient(to right,blue , pink);
+}
+
+b {
+    font-style: italic;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    background-color: whitesmoke;
+    width: 460px;
+    padding: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.top p {
+    font-size: 20px;
+}
+
+.section {
+    display: flex;
+}
+
+.section section {
+    background-color: whitesmoke;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
